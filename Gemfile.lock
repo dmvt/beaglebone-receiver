@@ -1,0 +1,66 @@
+GIT
+  remote: https://github.com/teamsnap/emque-consuming.git
+  revision: 6377ebea2d24b7af4727a6bc2e22ad18526c5037
+  specs:
+    emque-consuming (1.0.0.beta2)
+      celluloid (= 0.16.0)
+      dante (~> 0.2.0)
+      inflecto (~> 0.0.2)
+      oj (~> 2.11.4)
+      pipe-ruby (~> 0.2.0)
+      puma (~> 2.11.1)
+      virtus (~> 1.0.4)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    amq-protocol (1.9.2)
+    axiom-types (0.1.1)
+      descendants_tracker (~> 0.0.4)
+      ice_nine (~> 0.11.0)
+      thread_safe (~> 0.3, >= 0.3.1)
+    beaglebone (1.2.6)
+    bunny (1.7.0)
+      amq-protocol (>= 1.9.2)
+    celluloid (0.16.0)
+      timers (~> 4.0.0)
+    coderay (1.1.0)
+    coercible (1.0.0)
+      descendants_tracker (~> 0.0.1)
+    dante (0.2.0)
+    descendants_tracker (0.0.4)
+      thread_safe (~> 0.3, >= 0.3.1)
+    equalizer (0.0.11)
+    hitimes (1.2.2)
+    ice_nine (0.11.1)
+    inflecto (0.0.2)
+    method_source (0.8.2)
+    oj (2.11.5)
+    pipe-ruby (0.2.0)
+    pry (0.10.1)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    puma (2.11.2)
+      rack (>= 1.1, < 2.0)
+    rack (1.6.1)
+    rake (10.4.2)
+    slop (3.6.0)
+    thread_safe (0.3.5)
+    timers (4.0.1)
+      hitimes
+    virtus (1.0.5)
+      axiom-types (~> 0.1)
+      coercible (~> 1.0)
+      descendants_tracker (~> 0.0, >= 0.0.3)
+      equalizer (~> 0.0, >= 0.0.9)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  beaglebone
+  bunny
+  emque-consuming!
+  pry
+  rake
