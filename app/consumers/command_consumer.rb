@@ -1,4 +1,5 @@
 class CommandConsumer
+  include Beaglebone
   include Emque::Consuming.consumer
 
   def process_command(message)
