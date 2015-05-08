@@ -4,7 +4,10 @@ class CommandConsumer
 
   def process_command(message)
     GPIOPin
-      .new(*message.values[:init_args])
-      .send(message.values[:command], *message.values[:command_args])
+      .new(*message.values[:init_args].map(&:to_sym))
+      .send(
+        message.values[:command],
+        *message.values[:command_args].map(&:to_sym)
+      )
   end
 end
